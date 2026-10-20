@@ -1,0 +1,9 @@
+# Earthquakes in and around Japan, 2000-2009, (time, longitude, latitude) (Section 5.2).
+name: earthquake
+protocol: split
+file: earthquake.csv
+split_offset: 42
+n_seeds: 10
+domain: [[2000, 2010], [122, 150], [22, 46]]
+grid: {kind: regular, n_per_dim: 21}
+dtype: float32

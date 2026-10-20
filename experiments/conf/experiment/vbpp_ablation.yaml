@@ -1,0 +1,13 @@
+# @package _global_
+# Figure 15: VBPP with sqrt(M) = 8..24 inducing points per dimension on bei and
+# 2D earthquake. Run with: python experiments/run.py -m +experiment=vbpp_ablation
+defaults:
+  - override /method: vbpp
+
+run_name: vbpp_M${method.inducing_per_dim}
+
+hydra:
+  sweeper:
+    params:
+      dataset: bei,earthquake2d
+      method.inducing_per_dim: range(8,25)

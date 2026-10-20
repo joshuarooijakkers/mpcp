@@ -1,0 +1,6 @@
+# VBPP: squared GP link with inducing points on a regular grid (Lloyd et al., 2015).
+name: vbpp
+inducing_per_dim: ???
+lengthscales: ???
+normalize: true       # fit on the unit cube (true) or in original units (false)
+num_samples: 1000

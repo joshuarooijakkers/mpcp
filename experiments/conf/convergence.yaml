@@ -1,0 +1,21 @@
+# Convergence of predictive resampling (Figure 9); see experiments/convergence.py.
+defaults:
+  - dataset: lambda1
+  - method: mpcp
+  - _self_
+
+seed: 0            # simulated dataset
+rng_seed: 42       # the Gamma(n, 1) draws use the stream seeded with rng_seed + seed
+num_chains: 1000   # forward-sampling chains (the figure shows chains 10-14)
+num_steps: 4000    # T
+chain_seed: 1      # JAX seed of the chains
+
+paths:
+  data: data
+  logs: logs
+
+hydra:
+  job:
+    chdir: false
+  run:
+    dir: outputs/${dataset.name}/convergence/${now:%Y-%m-%d_%H-%M-%S}

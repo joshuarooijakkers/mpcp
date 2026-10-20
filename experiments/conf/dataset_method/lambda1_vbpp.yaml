@@ -1,0 +1,4 @@
+# @package method
+inducing_per_dim: 20
+lengthscales: 1.0
+normalize: false

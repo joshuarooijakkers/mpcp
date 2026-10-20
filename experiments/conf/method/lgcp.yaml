@@ -1,0 +1,12 @@
+# Log-Gaussian Cox process on binned counts, sampled with HMC from the MAP estimate.
+name: lgcp
+bins_per_dim: ???
+lengthscales: ???
+map_maxiter: null
+num_samples: 1000
+num_burnin_steps: ???
+num_leapfrog_steps: 10
+step_size: 0.01
+num_adaptation_steps: 10
+target_accept_prob: 0.75
+adaptation_rate: 0.1

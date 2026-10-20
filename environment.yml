@@ -1,0 +1,13 @@
+# Conda environment used for the paper (Linux, NVIDIA GPU with CUDA 12):
+#   conda env create -f environment.yml && conda activate mpcp
+# For CPU only, replace jax[cuda12] by jax below. The figures also need a LaTeX
+# installation, and the DPMM baseline needs R (see README.md).
+name: mpcp
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pip
+  - pip:
+      - jax[cuda12]==0.6.2
+      - -e .[baselines,experiments]

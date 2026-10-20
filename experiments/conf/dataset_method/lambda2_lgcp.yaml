@@ -1,0 +1,5 @@
+# @package method
+bins_per_dim: 12
+lengthscales: [0.1, 0.1]
+map_maxiter: 2000
+num_burnin_steps: 500

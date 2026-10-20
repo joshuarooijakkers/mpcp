@@ -1,0 +1,13 @@
+# @package _global_
+# Figure 15: VLGCP with sqrt(M) = 8..24 bins per dimension on bei and 2D
+# earthquake. Run with: python experiments/run.py -m +experiment=vlgcp_ablation
+defaults:
+  - override /method: vlgcp
+
+run_name: vlgcp_M${method.bins_per_dim}
+
+hydra:
+  sweeper:
+    params:
+      dataset: bei,earthquake2d
+      method.bins_per_dim: range(8,25)

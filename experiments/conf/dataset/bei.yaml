@@ -1,0 +1,9 @@
+# bei tree locations (Section 5.2), 3,604 events; 50/50 train/test splits.
+name: bei
+protocol: split
+file: bei.csv
+split_offset: 0          # split random_state = split_offset + seed
+n_seeds: 10
+domain: [[0, 1000], [0, 500]]
+grid: {kind: regular, n_per_dim: 100}
+dtype: float32           # normalised inputs are rounded to float32, as in the paper runs

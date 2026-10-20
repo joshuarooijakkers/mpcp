@@ -1,0 +1,24 @@
+# Fit `method` on `dataset` for the given seeds; see experiments/run.py.
+defaults:
+  - dataset: lambda1
+  - method: mpcp
+  # Method hyperparameters that depend on the dataset (e.g. dataset_method/bei_vbpp.yaml)
+  - optional dataset_method: ${dataset}_${method}
+  - _self_
+
+seeds: null            # dataset seeds to run; null = all (dataset.n_seeds)
+rng_seed: 42           # seed s uses random streams seeded with rng_seed + s
+run_name: ${method.name}
+
+paths:                 # relative to the repository root
+  data: data
+  logs: logs
+
+hydra:
+  job:
+    chdir: false
+  run:
+    dir: outputs/${dataset.name}/${run_name}/${now:%Y-%m-%d_%H-%M-%S}
+  sweep:
+    dir: outputs/multirun/${now:%Y-%m-%d_%H-%M-%S}
+    subdir: ${hydra.job.num}

@@ -1,0 +1,10 @@
+# @package _global_
+# Table 3: MPCP on lambda2 with the covariates processed in reverse order.
+# Run with: python experiments/run.py +experiment=covariate_order
+defaults:
+  - override /dataset: lambda2
+  - override /method: mpcp
+
+dataset:
+  reverse_covariates: true
+run_name: mpcp_reversed

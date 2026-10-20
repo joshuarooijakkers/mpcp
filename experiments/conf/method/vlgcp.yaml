@@ -1,0 +1,5 @@
+# Variational log-Gaussian Cox process on binned counts.
+name: vlgcp
+bins_per_dim: ???
+lengthscales: ???
+num_samples: 1000

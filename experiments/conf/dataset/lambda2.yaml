@@ -1,0 +1,9 @@
+# 2D synthetic intensity lambda_2 on [0, 10]^2 (Section 5.1); 50 simulated datasets.
+# The grid and true intensity are read from lambda2/true.csv (50 x 50 grid).
+name: lambda2
+protocol: simulated
+files: lambda2/samples_{seed}.csv
+n_seeds: 50
+domain: [[0, 10], [0, 10]]
+grid: {kind: file, file: lambda2/true.csv}
+reverse_covariates: false   # true for the covariate-ordering ablation (Table 3)

@@ -1,0 +1,10 @@
+# Earthquake data without time, (longitude, latitude), for the sparse-approximation ablation (Appendix C.7).
+name: earthquake2d
+protocol: split
+file: earthquake.csv
+columns: [1, 2]
+split_offset: 0
+n_seeds: 10
+domain: [[122, 150], [22, 46]]
+grid: {kind: regular, n_per_dim: 25}
+dtype: float32

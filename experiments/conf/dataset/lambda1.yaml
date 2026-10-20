@@ -1,0 +1,7 @@
+# 1D synthetic intensity lambda_1 on [0, 50] (Section 5.1); 50 simulated datasets.
+name: lambda1
+protocol: simulated
+files: lambda1/lambda1_{seed}.csv
+n_seeds: 50
+domain: [[0, 50]]
+grid: {kind: linspace, low: 1.0e-6, high: 49.999999, n: 160}

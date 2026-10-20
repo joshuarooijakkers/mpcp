@@ -1,0 +1,11 @@
+# @package _global_
+# Figure 8: MPCP with the Gaussian instead of the Frank copula on lambda1 (dataset 12).
+# Run with: python experiments/run.py +experiment=gaussian_copula
+defaults:
+  - override /dataset: lambda1
+  - override /method: mpcp
+
+method:
+  copula: gaussian
+seeds: [12]
+run_name: mpcp_gaussian

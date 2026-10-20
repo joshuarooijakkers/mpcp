@@ -1,0 +1,4 @@
+# @package method
+bins_per_dim: 20
+lengthscales: 1.0
+num_burnin_steps: 300

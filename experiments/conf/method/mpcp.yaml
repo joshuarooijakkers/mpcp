@@ -1,0 +1,8 @@
+# Martingale Posterior Cox Process (Section 4).
+name: mpcp
+copula: frank         # frank | gaussian
+n_perm: 10            # number of data permutations M
+perm_seed: 20         # seed of the data permutations
+num_samples: 1000     # posterior samples B
+T: 2000               # predictive-resampling steps N - n
+resample_seed: 200    # JAX seed of predictive resampling

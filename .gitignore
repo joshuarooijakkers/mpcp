@@ -1,0 +1,10 @@
+__pycache__/
+*.egg-info/
+build/
+dist/
+.vscode/
+
+# Experiment results and figures (see README.md)
+/logs/
+/figs/
+/outputs/

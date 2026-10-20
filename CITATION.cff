@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the paper below."
+title: "Martingale Posterior Cox Processes"
+authors:
+  - family-names: Rooijakkers
+    given-names: Joshua
+    website: "https://joshuarooijakkers.github.io/"
+  - family-names: Fong
+    given-names: Edwin
+    website: "https://edfong.github.io/"
+repository-code: "https://github.com/joshuarooijakkers/mpcp"
+license: MIT
+preferred-citation:
+  type: article
+  title: "Martingale Posterior Cox Processes"
+  authors:
+    - family-names: Rooijakkers
+      given-names: Joshua
+    - family-names: Fong
+      given-names: Edwin
+  journal: "arXiv preprint arXiv:2610.24787"
+  year: 2026
+  url: "https://arxiv.org/abs/2610.24787"
+  identifiers:
+    - type: other
+      value: "arXiv:2610.24787"
+      description: "arXiv identifier"

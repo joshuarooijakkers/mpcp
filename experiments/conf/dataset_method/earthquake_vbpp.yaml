@@ -1,0 +1,3 @@
+# @package method
+inducing_per_dim: 10
+lengthscales: [0.1, 0.1, 0.1]
